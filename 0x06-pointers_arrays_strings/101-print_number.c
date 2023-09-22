@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+#include <stdio.h>
 /**
  * print_number - print numbers chars
  * @n: integer params
@@ -11,12 +11,12 @@ unsigned int n1;
 n1 = n;
 if (n < 0)
 {
-_putchar('-');
+putchar('-');
 n1 = -n;
 }
 if (n1 / 10 != '\0')
 {
 print_number(n1 / 10);
 }
-_putchar((n1 % 10) + '\0');
+putchar((n1 % 10) + '\0');
 }
